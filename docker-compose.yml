@@ -1,23 +1,21 @@
 services:
   web:
-    image: my-nginx-practice:v1
+    image: my-nginx-practice:nonroot
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.nonroot
     container_name: my-nginx-web
     ports:
-      - "8081:80"
+      - "8080:8080"
     depends_on:
       - db
     read_only: true
     tmpfs:
-      - /var/cache/nginx
-      - /var/run
       - /tmp
-    volumes:
-      - ./nginx_logs:/var/log/nginx
     security_opt:
       - no-new-privileges:true
+    cap_drop:
+      - ALL
     restart: unless-stopped
     networks:
       - backend
