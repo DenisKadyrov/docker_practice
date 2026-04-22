@@ -113,7 +113,7 @@ docker rm -f my-nginx-practice
 trivy image nginx:alpine
 ```
 
-Результат и рекомендации сохранены в файле [security_scan.txt](/home/denis/docker_practice/security_scan.txt).
+Результат и рекомендации сохранены в файле [security_scan.txt](./security_scan.txt).
 
 ### 2.2 Работа с секретами
 
@@ -151,7 +151,7 @@ docker rm -f secret-app
 
 ### 2.3 Подъём стека через Compose
 
-Файл [docker-compose.yml](/home/denis/docker_practice/docker-compose.yml) поднимает два сервиса:
+Файл [docker-compose.yml](./docker-compose.yml) поднимает два сервиса:
 
 - `web` - Nginx с кастомной страницей
 - `db` - PostgreSQL 15
@@ -199,7 +199,7 @@ docker compose down
 
 ### 2.4 Принцип наименьших привилегий
 
-Для задания используется [Dockerfile.nonroot](/home/denis/docker_practice/Dockerfile.nonroot:1).
+Для задания используется [Dockerfile.nonroot](./Dockerfile.nonroot).
 
 Что реализовано:
 
