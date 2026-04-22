@@ -199,7 +199,7 @@ docker compose down
 
 ### 2.4 Принцип наименьших привилегий
 
-Для задания используется [Dockerfile.nonroot](/home/denis/docker_practice/Dockerfile.nonroot:1).
+Для задания используется [Dockerfile.nonroot](./Dockerfile.nonroot:1).
 
 Что реализовано:
 
