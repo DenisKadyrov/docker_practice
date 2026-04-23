@@ -20,6 +20,7 @@
 - `scripts/run_secret_app.sh` - запуск приложения с передачей секрета для задания 2.2
 - `server.py` - простой HTTP-сервер, который читает `APP_API_TOKEN`
 - `security_scan.txt` - отчёт по Trivy для задания 2.1
+- `photo_report` - скриншоты проделанной работы
 
 ## Уровень 1
 
